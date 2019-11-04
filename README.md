@@ -235,10 +235,14 @@ UDP对应的协议：
 （2） SNMP：简单网络管理协议，使用161号端口，是用来管理网络设备的。由于网络设备很多，无连接的服务就体现出其优势。  
 
 （3） TFTP(Trival File Transfer Protocal)，简单文件传输协议，该协议在熟知端口69上使用UDP服务。 
-## TCP的三次握手过程？为什么会采用三次握手，若采用二次握手可以吗？  
+## TCP的三次握手和四次挥手？  
 <img src="image/three.png">
+seq:"sequance"序列号；ack:"acknowledge"确认号；SYN:"synchronize"请求同步标志；  
+；ACK:"acknowledge"确认标志"；FIN："Finally"结束标志。  
+
 
 答：建立连接的过程是利用客户服务器模式，假设主机A为客户端，主机B为服务器端。  
+   
 
 （1）TCP的三次握手过程：主机A向B发送连接请求；主机B对收到的主机A的报文段进行确认；主机A再次对主机B的确认进行确认。  
 
